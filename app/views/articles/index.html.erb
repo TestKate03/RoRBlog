@@ -1,6 +1,10 @@
 <h1 align="center" style="color:#483d8b">My poems</h1>
  
 <table>
+  <tr>
+    <img src="https://pp.vk.me/c837729/v837729417/deda/yrZ7px4N43E.jpg" align="right">
+  </tr>
+
   <tr align="center">
     <th>Title</th>
     <th style="text-align:center">Text</th>
@@ -9,7 +13,7 @@
   <% @articles.each do |article| %>
     <tr align="center">
       <td><%= article.title %></td>
-      <td><pre><i><%= article.text %></i>></pre></td>
+      <td style="white-space: pre"; align="left"><i><%= article.text %></i></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article_path(article),
